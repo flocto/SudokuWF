@@ -2,7 +2,7 @@
 This is very basic sudoku solver based on a very simple wave function collapse, it does not include any advanced algorithms or techniques.
 
 ## Wave Function Collapse
-Wave function collapse is essentially a way to reduce a set of superpositions defined by a wave function to a singular outcome based on observation.
+Wave function collapse is a way to reduce a set of superpositions defined by a wave function to a singular outcome based on observation.
 In this case, the set of superpositions is the possible valid numbers for a given position.
 Based on the other numbers in the same row, column, or cell, this superposition is narrowed down until it collapses to a single choice, which is the correct number in that spot.
 
@@ -10,15 +10,15 @@ Based on the other numbers in the same row, column, or cell, this superposition 
 Serve input as a 9 lines of 9 digits each, with an 0 for empty spaces.
 Ex: 
 ```
-    800930002
-    009000040
-    702100960
-    200000090
-    060000070
-    070006005
-    027008406
-    030000500
-    500062008
+800930002
+009000040
+702100960
+200000090
+060000070
+070006005
+027008406
+030000500
+500062008
 ```
 
 ## Output
