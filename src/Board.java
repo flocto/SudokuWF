@@ -8,6 +8,7 @@ public class Board {
     private HashMap<Integer, ArrayList<Cell>> colMap;
     private HashMap<Integer, ArrayList<Cell>> boxMap;
     int solved = 0;
+    int total = 81;
 
     public Board() {
         this.board = new Cell[9][9];
@@ -35,6 +36,9 @@ public class Board {
         ArrayList<Cell> boxList = this.boxMap.getOrDefault(row / 3 * 3 + col / 3, new ArrayList<Cell>());
         boxList.add(value);
         this.boxMap.put(row / 3 * 3 + col / 3, boxList);
+        if (value.getValue() != 0) {
+            this.total--;
+        }
     }
 
     private int getBoxIndex(int row, int col) {
@@ -112,5 +116,9 @@ public class Board {
 
     public int getSolved() {
         return this.solved;
+    }
+
+    public int getTotal() {
+        return this.total;
     }
 }

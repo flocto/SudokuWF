@@ -20,7 +20,13 @@ public class Main {
 
         board.printBoard();
         board.solve();
-        System.out.println("\n\n\nSolved Cells: " + board.getSolved());
+        System.out.println("\n\n\nSolved " + board.getSolved() + " out of " + board.getTotal() + " cells");
+        if(board.getSolved() == board.getTotal()) {
+            System.out.println("All cells solved");
+        }
+        else{
+            System.out.println(board.getTotal() - board.getSolved() + " cells remaining");
+        }
         board.printBoard();
     }
 }
