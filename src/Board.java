@@ -67,7 +67,6 @@ public class Board {
             int col = cell.getCol();
             int box = getBoxIndex(row, col);
             int value = cell.getValue();
-            System.out.println("Computing " + row + " " + col + " " + box + " " + value);
             ArrayList<Cell> rowCells = rowMap.get(row);
             ArrayList<Cell> colCells = colMap.get(col);
             ArrayList<Cell> boxCells = boxMap.get(box);

@@ -20,7 +20,7 @@ public class Main {
 
         board.printBoard();
         board.solve();
-        System.out.println("Solved Cells: " + board.getSolved());
+        System.out.println("\n\n\nSolved Cells: " + board.getSolved());
         board.printBoard();
     }
 }

@@ -32,7 +32,6 @@ public class Cell {
 
     public void collapse(){
         this.collapsed = true;
-        System.out.println(this.states);
         this.value = this.states.iterator().next();
         this.states = null;
     }
